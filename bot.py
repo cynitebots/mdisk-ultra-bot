@@ -34,7 +34,7 @@ async def start(bot, message):
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
     new_string = str(message.text)
-    conv = await message.reply("Ruko jara Sabar kro ✋")
+    conv = await message.reply("Made By @Teamx69 ✋")
     dele = conv["message_id"]
     try:
         Doodstream_link = await multi_Doodstream_up(new_string)
@@ -47,7 +47,7 @@ async def Doodstream_uploader(bot, message):
 @bot.on_message(filters.photo & filters.private)
 async def Doodstream_uploader(bot, message):
     new_string = str(message.caption)
-    conv = await message.reply("Ruko jara Sabar kro ✋")
+    conv = await message.reply("Made By @Teamx69 ✋")
     dele = conv["message_id"]
     try:
         Doodstream_link = await multi_Doodstream_up(new_string)
@@ -106,7 +106,7 @@ async def Doodstream_up(link):
     title_new = urlparse(link)
     title_new = os.path.basename(title_new.path)
     title_Doodstream = '@' + CHANNEL + title_new
-    realaurl = 'https://diskuploader.mypowerdisk.com/v1/tp/cp'
+    realaurl = 'https://Mdiskshortner.link'
     param = {'token':f'{MDISK_TOKEN}','link':link}
     res = requests.post(realaurl, json = param)         
     data = res.json()
